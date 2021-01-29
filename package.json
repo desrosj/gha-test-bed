@@ -1,0 +1,22 @@
+{
+  "name": "gha-test-bed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desrosj/gha-test-bed.git"
+  },
+  "author": "Jonathan Desrosiers",
+  "license": "GPLv2 or later",
+  "bugs": {
+    "url": "https://github.com/desrosj/gha-test-bed/issues"
+  },
+  "homepage": "https://github.com/desrosj/gha-test-bed#readme",
+  "devDependencies": {
+    "grunt": "^1.3.0"
+  }
+}

@@ -1,0 +1,19 @@
+name: Run Tests
+
+on:
+  repository_dispatch:
+    types: [ phpunit-cron ]
+
+jobs:
+  test-time:
+    name: Run our tests
+    runs-on: windows-latest
+
+    steps:
+      - name: Install NodeJS
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Install Dependencies
+        run: npx install-changed --install-command="npm ci"

@@ -1,0 +1,18 @@
+name: Branch Cron
+
+on:
+  # Run every 5 minutes.
+  schedule:
+    - cron: '0/5 * * * *'
+
+jobs:
+  test-dispatch:
+    name: Start test jobs for supported branches
+    runs-on: windows-latest
+
+    steps:
+      - name: Send dispatch event
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ github.token }}
+          event-type: phpunit-cron
