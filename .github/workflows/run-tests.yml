@@ -1,8 +1,7 @@
 name: Run Tests
 
 on:
-  repository_dispatch:
-    types: [ phpunit-cron ]
+  push:
 
 jobs:
   test-time:
