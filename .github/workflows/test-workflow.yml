@@ -3,7 +3,7 @@ name: Branch Cron
 on:
   # Run every 5 minutes.
   schedule:
-    - cron: '0/5 * * * *'
+    - cron: '0,10,20,30,40,50 * * * *'
 
 jobs:
   test-dispatch:
