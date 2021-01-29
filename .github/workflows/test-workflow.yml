@@ -1,7 +1,7 @@
 name: Branch Cron
 
 on:
-  # Run every 5 minutes.
+  push:
   schedule:
     - cron: '0,10,20,30,40,50 * * * *'
 
